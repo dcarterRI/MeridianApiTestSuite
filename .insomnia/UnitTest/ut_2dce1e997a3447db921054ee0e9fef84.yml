@@ -1,0 +1,16 @@
+_id: ut_2dce1e997a3447db921054ee0e9fef84
+type: UnitTest
+parentId: uts_7a924fe096b247f69ee9ab255455b60d
+modified: 1670348825293
+created: 1670348825293
+requestId: req_8b86e16427794edebbf3f7c7a40ccef9
+name: 4. ReserveTour
+code: |-
+  const reserveTour = await insomnia.send();
+
+  const reserveTourBody = JSON.parse(reserveTour.data);
+  console.log(reserveTourBody.Result);
+
+
+  expect(reserveTour.status).to.equal(200);
+  expect(reserveTourBody.Result).be.true;

@@ -1,0 +1,12 @@
+_id: ut_f199de81a3a241ef814eeb3ff9a29b36
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825214
+created: 1670348825214
+requestId: req_5b40618812124a2788f636c14c1cf37e
+name: 5. ListUnavailableDates
+code: |-
+  const listUnavailableDate = await insomnia.send();
+
+  expect(listUnavailableDate.status).to.equal(200);
+  expect(listUnavailableDate.data).to.exist;

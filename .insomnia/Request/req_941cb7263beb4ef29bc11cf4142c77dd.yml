@@ -1,0 +1,34 @@
+_id: req_941cb7263beb4ef29bc11cf4142c77dd
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825078
+created: 1670348825078
+url: "{{MERIDIAN}}/api/v3/booking/move"
+name: 8. MoveBooking
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+        "BookingRef": "{{ _.bookingRef }}",
+        "NewTourDate": "{{ _.endDateRange }}",
+        "NewEventCode": "{{ _.eventCode }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616346
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

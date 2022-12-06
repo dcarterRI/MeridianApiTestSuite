@@ -1,0 +1,10 @@
+_id: ut_8fb5d63dfa054f88a5c689dba7060dba
+type: UnitTest
+parentId: uts_6a0ffbe0626c4bd18e6be8a1225c7677
+modified: 1670348825151
+created: 1670348825151
+requestId: req_c485428c2bcb42348267be99351bb45e
+name: 1. GetToken
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

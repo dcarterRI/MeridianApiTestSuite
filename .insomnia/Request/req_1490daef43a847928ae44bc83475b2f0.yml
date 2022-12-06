@@ -1,0 +1,25 @@
+_id: req_1490daef43a847928ae44bc83475b2f0
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825113
+created: 1670348825113
+url: "{{MERIDIAN}}/api/v3/event/types?includetickets=true"
+name: 2. GetEvent
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616372
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

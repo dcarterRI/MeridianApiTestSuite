@@ -1,0 +1,13 @@
+_id: ut_cdc8eccf02fb476b9f623bf0012c932c
+type: UnitTest
+parentId: uts_7a924fe096b247f69ee9ab255455b60d
+modified: 1670348825310
+created: 1670348825310
+requestId: req_46713eef7b37496bb707e69c44bf885a
+name: 6. Confirm
+code: |
+  const confirmResponse = await insomnia.send();
+  const confirmTourBody = JSON.parse(confirmResponse.data);
+
+  expect(confirmResponse.status).to.equal(200);
+  expect(confirmTourBody.Result).be.true;

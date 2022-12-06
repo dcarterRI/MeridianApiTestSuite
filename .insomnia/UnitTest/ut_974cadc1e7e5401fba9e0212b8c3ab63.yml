@@ -1,0 +1,13 @@
+_id: ut_974cadc1e7e5401fba9e0212b8c3ab63
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825260
+created: 1670348825260
+requestId: req_437d9b22f20f40158add4a820b20b711
+name: 14. Refund Booking
+code: |-
+  const refundResponse = await insomnia.send();
+  const refundBody = JSON.parse(refundResponse.data);
+
+  expect(refundResponse.status).to.equal(200);
+  expect(refundBody.Result).be.true;

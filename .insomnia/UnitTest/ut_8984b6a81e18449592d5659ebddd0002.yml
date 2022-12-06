@@ -1,0 +1,13 @@
+_id: ut_8984b6a81e18449592d5659ebddd0002
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825255
+created: 1670348825255
+requestId: req_8a048ef3be534c67ac4250e1789cc7a8
+name: 13. (Dash) Get Booking by Reference
+code: |-
+  const getBookingByRefResponse = await insomnia.send();
+  console.log(getBookingByRefResponse);
+
+  expect(getBookingByRefResponse.status).to.equal(200);
+  expect(getBookingByRefResponse.data).to.have.lengthOf.above(1);

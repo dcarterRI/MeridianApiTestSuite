@@ -1,0 +1,23 @@
+_id: req_5a171b51cacf490a8bbff66f2d5b72e8
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825125
+created: 1670348825125
+url: "{{MERIDIAN}}/api/v3/booking/cancel/{{ _.bookingRef }}"
+name: 15. Cancel Booking
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1669979616271
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

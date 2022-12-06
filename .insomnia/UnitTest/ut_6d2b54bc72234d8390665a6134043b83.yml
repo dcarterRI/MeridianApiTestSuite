@@ -1,0 +1,46 @@
+_id: ut_6d2b54bc72234d8390665a6134043b83
+type: UnitTest
+parentId: uts_6a0ffbe0626c4bd18e6be8a1225c7677
+modified: 1670348825162
+created: 1670348825162
+requestId: null
+name: Reserve Available Date
+code: |-
+  const getEvent = await insomnia.send('req_2f1e7f4342f94c2db4999b4c43459cc8');
+  const eventBody = JSON.parse(getEvent.data);
+  const eventTypeCode = eventBody.data[1].EventTypeCode;
+  console.log(eventTypeCode);
+  //_.eventTypeCode = eventTypeCode
+
+
+  //Check Available
+  const response1 = await insomnia.send('req_0af1a8e2da4244198f81723cf769d0f5');
+  const checkAvailableBody = JSON.parse(response1.data);
+  //const checkAvailable = eventBody.data[1].EventTypeCode;
+  console.log(checkAvailableBody.data[0].EventDate);
+  //expect(response1.status).to.equal(200);
+
+
+  //Reserve Tour
+  const response2 = await insomnia.send('req_8b86e16427794edebbf3f7c7a40ccef9');
+  const reserveTour = JSON.parse(response2.data);
+  console.log(reserveTour);
+  expect(response2.status).to.equal(200);
+
+
+  //{
+  //    "BookingRef": "234591",
+  //    "EventDate": "2022-09-10",
+  //    "EventCode": "EB1",
+  //    "Tickets": [
+  //        {
+  //            "TicketCode": "2.2F1A",
+  //            "Qty": 2,
+  //            "Value": 20.00
+  //        }
+  //    ]
+  //}
+
+
+
+  //expect(getEvent.status).to.equal(200);

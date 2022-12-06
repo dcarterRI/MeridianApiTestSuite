@@ -1,0 +1,13 @@
+_id: ut_b2423a0058a14b69a053e6a4399836fa
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825230
+created: 1670348825230
+requestId: req_9655ccb54d7d40bdbb2a3f7116e59e26
+name: 8. MoveBooking
+code: |-
+  const moveBookingResponse = await insomnia.send();
+  const moveBookingBody = JSON.parse(moveBookingResponse.data);
+
+  expect(moveBookingResponse.status).to.equal(200);
+  expect(moveBookingBody.Result).be.true;

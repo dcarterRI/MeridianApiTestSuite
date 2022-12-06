@@ -1,0 +1,44 @@
+_id: req_d9fbaa4f7d6e47e3b06e943059637f31
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825071
+created: 1670348825071
+url: "{{MERIDIAN}}/api/v3/booking/update"
+name: 9. UpdateBooking
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+        "BookingRef": "{{ _.bookingRef }}",
+        "FirstName": "{{ _.firstName }}Update",
+        "Surname": "{{ _.surname }}Update",
+        "AddLine1": "{{ _.addLine1 }}Update",
+        "AddLine2": "{{ _.addLine2 }}Update",
+        "AddLine3": "{{ _.addLine3 }}Update",
+        "PostCode": "{{ _.postCode }}",
+        "Email": "{{ _.email }}",
+        "PhoneNo": "{{ _.phoneNo }}",
+        "Subscribe": "{{ _.subscribe }}",
+        "Loyalty": "{{ _.joinLoyalty }}",
+        "ShareDetails": "{{ _.shareDetails }}",
+        "Nationality": "{{ _.nationality }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616341
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

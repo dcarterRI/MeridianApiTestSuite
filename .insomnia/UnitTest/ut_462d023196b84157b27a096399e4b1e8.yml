@@ -1,0 +1,15 @@
+_id: ut_462d023196b84157b27a096399e4b1e8
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825194
+created: 1670348825194
+requestId: req_c485428c2bcb42348267be99351bb45e
+name: 1. GetMeridianToken
+code: |-
+  const getToken = await insomnia.send();
+  const body = JSON.parse(getToken.data);
+  console.log(getToken);
+  console.log(body);
+
+  expect(getToken.status).to.equal(200);
+  expect(body.Name).to.equal("API USER");

@@ -1,0 +1,105 @@
+_id: env_6562fa2b6cc24b04aa8d765756da9cc0
+type: Environment
+parentId: env_16065aa693324b94a16e664ebae6c5b9
+modified: 1670348824996
+created: 1670348824996
+name: MeridianTestingEnvironments
+data:
+  1---------------------------------------------------------------------------: Test Set up
+  bookingRef: AT0018
+  MERIDIAN: https://104.45.92.217:9993
+  token: "{% response 'body', 'req_c485428c2bcb42348267be99351bb45e',
+    'b64::JC5Ub2tlbg==::46b', 'when-expired', 1200 %}"
+  2---------------------------------------------------------------------------: Booking Information
+  eventTypeCode: "{% response 'body', 'req_2f1e7f4342f94c2db4999b4c43459cc8',
+    'b64::JC5kYXRhWzRdLkV2ZW50VHlwZUNvZGU=::46b', 'no-history', 60 %}"
+  newEventTypeCodeTest: "{% response 'body',
+    'req_2f1e7f4342f94c2db4999b4c43459cc8',
+    'b64::JC5kYXRhWzNdLkV2ZW50VHlwZUNvZGU=::46b', 'no-history', 60 %}"
+  eventCode: "{% response 'body', 'req_0af1a8e2da4244198f81723cf769d0f5',
+    'b64::JC5kYXRhWzBdLlNsb3RzRGV0YWlsWzBdLkV2ZW50Q29kZQ==::46b', 'no-history',
+    60 %}"
+  ticketCode: "{% response 'body', 'req_2f1e7f4342f94c2db4999b4c43459cc8',
+    'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzBdLkl0ZW1Db2Rl::46b', 'no-history', 60
+    %}"
+  ticketPrice: "{% response 'body', 'req_2f1e7f4342f94c2db4999b4c43459cc8',
+    'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzBdLlJldGFpbFByaWNlICA=::46b', 'always',
+    60 %}.00"
+  secondaryTicketCode: "{% response 'body',
+    'req_2f1e7f4342f94c2db4999b4c43459cc8',
+    'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzFdLkl0ZW1Db2Rl::46b', 'no-history', 60
+    %}"
+  secondaryTicketPrice: "{% response 'body',
+    'req_2f1e7f4342f94c2db4999b4c43459cc8',
+    'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzFdLlJldGFpbFByaWNlICA=::46b',
+    'no-history', 60 %}.00"
+  3---------------------------------------------------------------------------: Dates
+  date: "{% response 'body', 'req_0af1a8e2da4244198f81723cf769d0f5',
+    'b64::JC5kYXRhWzRdLkV2ZW50RGF0ZQ==::46b', 'no-history', 60 %}"
+  year: "{% now 'custom', 'yyyy' %}"
+  todayDate: "{% now 'custom', 'yyyy-MM-DD' %}"
+  endDateRange: "{{ (date| replace('T00:00:00', '') | replace(year, ( (year | int)
+    + 1 )) ) }}"
+  startDateRange: "{{ (date| replace('T00:00:00', '') | replace(year, ( (year |
+    int) - 1 )) ) }}"
+  availableDate: "{{ date | replace('T00:00:00', '') }}"
+  4---------------------------------------------------------------------------: User Information
+  firstName: Test
+  surname: API
+  addLine1: B3, Centrepoint Business Park
+  addLine2: Oak Rd
+  addLine3: Dublin
+  postCode: D12 DW63
+  email: Auto.Testing@retail-int.com
+  phoneNo: "0872"
+  nationality: Irish
+  5--------------------------------------------------------------------------: User Preferences
+  subscribe: false
+  joinLoyalty: false
+  shareDetails: false
+  discountAmt: 0
+  giftVoucherAmt: 0
+  promoCode: SUMMER
+  apportionType: 1
+dataPropertyOrder:
+  "&":
+    - 1---------------------------------------------------------------------------
+    - bookingRef
+    - MERIDIAN
+    - token
+    - 2---------------------------------------------------------------------------
+    - eventTypeCode
+    - newEventTypeCodeTest
+    - eventCode
+    - ticketCode
+    - ticketPrice
+    - secondaryTicketCode
+    - secondaryTicketPrice
+    - 3---------------------------------------------------------------------------
+    - date
+    - year
+    - todayDate
+    - endDateRange
+    - startDateRange
+    - availableDate
+    - 4---------------------------------------------------------------------------
+    - firstName
+    - surname
+    - addLine1
+    - addLine2
+    - addLine3
+    - postCode
+    - email
+    - phoneNo
+    - nationality
+    - 5--------------------------------------------------------------------------
+    - subscribe
+    - joinLoyalty
+    - shareDetails
+    - discountAmt
+    - giftVoucherAmt
+    - promoCode
+    - apportionType
+color: null
+isPrivate: false
+metaSortKey: 1670240511684

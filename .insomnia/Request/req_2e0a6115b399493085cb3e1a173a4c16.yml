@@ -1,0 +1,26 @@
+_id: req_2e0a6115b399493085cb3e1a173a4c16
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825084
+created: 1670348825084
+url: "{{MERIDIAN}}/api/v3/booking/details?StartDate={{ _.todayDate }}&EndDate={{
+  _.endDateRange }}"
+name: 7. GetBookingDetail
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616350
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

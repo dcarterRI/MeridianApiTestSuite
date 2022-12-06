@@ -1,0 +1,10 @@
+_id: ut_faeecf1d449c4947a565f9d799b757a1
+type: UnitTest
+parentId: uts_6a0ffbe0626c4bd18e6be8a1225c7677
+modified: 1670348825167
+created: 1670348825167
+requestId: req_8b86e16427794edebbf3f7c7a40ccef9
+name: 4. ReserveTour
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

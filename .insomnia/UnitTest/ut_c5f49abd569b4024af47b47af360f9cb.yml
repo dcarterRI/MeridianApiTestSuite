@@ -1,0 +1,10 @@
+_id: ut_c5f49abd569b4024af47b47af360f9cb
+type: UnitTest
+parentId: uts_6a0ffbe0626c4bd18e6be8a1225c7677
+modified: 1670348825183
+created: 1670348825183
+requestId: req_3ee81e284df840b7afa8f83ec9dcc751
+name: bookingRef
+code: |
+  const response1 = bookingRef;
+  console.log(insomnia);

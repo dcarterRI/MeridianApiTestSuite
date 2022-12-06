@@ -1,0 +1,13 @@
+_id: ut_c1365012eaa043878f8b0d2769361107
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825224
+created: 1670348825224
+requestId: req_bcc802a090a84926a4d13a975e892725
+name: 7. GetBookingDetail
+code: |
+  const getBookingDetail = await insomnia.send();
+  const getBookingDetailBody = JSON.parse(getBookingDetail.data);
+
+  expect(getBookingDetail.status).to.equal(200);
+  expect(getBookingDetailBody.data).to.have.lengthOf.above(1);

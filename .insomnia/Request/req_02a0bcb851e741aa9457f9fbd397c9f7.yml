@@ -1,0 +1,21 @@
+_id: req_02a0bcb851e741aa9457f9fbd397c9f7
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825119
+created: 1670348825119
+url: "{{MERIDIAN}}/api/user/token/API/4604418"
+name: 1. GetMeridianToken
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1669979616375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

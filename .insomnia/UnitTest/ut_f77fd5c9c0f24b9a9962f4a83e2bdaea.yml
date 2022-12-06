@@ -1,0 +1,10 @@
+_id: ut_f77fd5c9c0f24b9a9962f4a83e2bdaea
+type: UnitTest
+parentId: uts_6a0ffbe0626c4bd18e6be8a1225c7677
+modified: 1670348825178
+created: 1670348825178
+requestId: req_0af1a8e2da4244198f81723cf769d0f5
+name: 3. CheckAvailability
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

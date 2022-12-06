@@ -1,0 +1,21 @@
+_id: ut_6323ca0c5c3b4140a47f85a7d883e551
+type: UnitTest
+parentId: uts_6a0ffbe0626c4bd18e6be8a1225c7677
+modified: 1670348825146
+created: 1670348825146
+requestId: null
+name: Meridian Test
+code: >
+  const getToken = await insomnia.send('req_c485428c2bcb42348267be99351bb45e');
+  //Get Token Id
+
+
+  const body = JSON.parse(getToken.data);
+
+  const item = body[0];
+
+  console.log(body);
+
+
+
+  //expect(getToken.status).to.equal(200);

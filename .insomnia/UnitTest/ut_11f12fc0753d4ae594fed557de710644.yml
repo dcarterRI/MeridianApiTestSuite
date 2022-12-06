@@ -1,0 +1,13 @@
+_id: ut_11f12fc0753d4ae594fed557de710644
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825235
+created: 1670348825235
+requestId: req_7c37efc352864bf99ae5688635491d93
+name: 9. UpdateBooking
+code: |-
+  const updateBookingResponse = await insomnia.send();
+  const updateBookingBody = JSON.parse(updateBookingResponse.data);
+
+  expect(updateBookingResponse.status).to.equal(200);
+  expect(updateBookingBody.Result).be.true;

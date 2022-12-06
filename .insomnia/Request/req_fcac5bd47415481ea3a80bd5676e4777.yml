@@ -1,0 +1,40 @@
+_id: req_fcac5bd47415481ea3a80bd5676e4777
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825053
+created: 1670348825053
+url: "{{MERIDIAN}}/api/v3/booking/addproducts"
+name: 12. AddItemsCheckOffers
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+        "BookingRef": "{{ _.bookingRef }}",
+        "Products": [
+    			{
+    			"ItemCode": "{{ _.secondaryTicketCode }}",
+    				"Value": "{{ _.secondaryTicketPrice }}",
+    				"Qty": 1
+    			}
+    		]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1e995763fc384ab08e492af421ca754f
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616330
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,14 @@
+_id: ut_7df1d83159aa421690f7ce6c7ccb6e1a
+type: UnitTest
+parentId: uts_7a924fe096b247f69ee9ab255455b60d
+modified: 1670348825305
+created: 1670348825305
+requestId: req_4fd539f26d324e2b88c284c4a9e991ea
+name: 12. AddItemsCheckOffers
+code: |-
+  const addItemsResponse = await insomnia.send();
+  const addItemsBody = JSON.parse(addItemsResponse.data);
+  console.log(addItemsBody.BookingRef);
+
+  expect(addItemsResponse.status).to.equal(200);
+  expect(addItemsBody.BookingRef).to.have.string('AT');

@@ -1,0 +1,35 @@
+_id: req_fa8b815297db4f20829178a3232a8908
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825058
+created: 1670348825058
+url: "{{MERIDIAN}}/api/v3/booking/preferences"
+name: 11. UpdateSubscription
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+        "Email": "{{ _.email }}",
+        "Subscribe": true,
+        "JoinLoyalty": true,
+        "ShareDetails": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616334
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

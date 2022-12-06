@@ -1,0 +1,12 @@
+_id: ut_970aaa0f4b2c41d7926843465e7af048
+type: UnitTest
+parentId: uts_33564747ee764131b90e4ecab85ed19d
+modified: 1670348825199
+created: 1670348825199
+requestId: req_2f1e7f4342f94c2db4999b4c43459cc8
+name: 2. GetEvent
+code: |
+  const getEvent = await insomnia.send();
+
+  expect(getEvent.status).to.equal(200);
+  expect(getEvent.data).to.have.lengthOf.above(1);

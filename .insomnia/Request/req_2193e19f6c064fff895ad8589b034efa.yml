@@ -1,0 +1,25 @@
+_id: req_2193e19f6c064fff895ad8589b034efa
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825107
+created: 1670348825107
+url: "{{MERIDIAN}}/api/v3/event/availability?EventTypeCode={{ _.eventTypeCode }}&"
+name: 3. CheckAvailability
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616366
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

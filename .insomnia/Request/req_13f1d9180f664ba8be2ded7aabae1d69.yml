@@ -1,0 +1,25 @@
+_id: req_13f1d9180f664ba8be2ded7aabae1d69
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825066
+created: 1670348825066
+url: "{{MERIDIAN}}/api/v3/booking/product?ProductId={{ _.ticketCode }}"
+name: 10. CheckProduct
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616338
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

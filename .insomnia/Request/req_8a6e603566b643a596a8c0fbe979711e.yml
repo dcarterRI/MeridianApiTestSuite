@@ -1,0 +1,25 @@
+_id: req_8a6e603566b643a596a8c0fbe979711e
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825047
+created: 1670348825047
+url: "{{MERIDIAN}}/api/v3/booking/details?BookingRef={{ _.bookingRef }}"
+name: 13. (Dash) Get Booking by Reference
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616326
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,12 @@
+_id: ut_bced7812c56c4b12b2c2bdacb6ade2e3
+type: UnitTest
+parentId: uts_7a924fe096b247f69ee9ab255455b60d
+modified: 1670348825282
+created: 1670348825282
+requestId: req_0af1a8e2da4244198f81723cf769d0f5
+name: 3. CheckAvailability
+code: |-
+  const checkAvailable = await insomnia.send();
+
+  expect(checkAvailable.status).to.equal(200);
+  expect(checkAvailable.data).to.have.lengthOf.above(1);

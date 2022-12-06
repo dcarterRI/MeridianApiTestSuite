@@ -1,0 +1,49 @@
+_id: req_4f061ac9dc884e528c84621874df528a
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825089
+created: 1670348825089
+url: "{{MERIDIAN}}/api/v3/booking/confirm"
+name: 6. Confirm
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+        "BookingRef": "{{ _.bookingRef }}",
+        "FirstName": "{{ _.firstName }}",
+        "Surname": "{{ _.surname }}",
+        "AddLine1": "{{ _.addLine1 }}",
+        "AddLine2": "{{ _.addLine2 }}",
+        "AddLine3": "{{ _.addLine3 }}",
+        "PostCode": "{{ _.postCode }}",
+        "Email": "{{ _.email }}",
+        "PhoneNo": "{{ _.phoneNo }}",
+        "Subscribe": "{{ _.subscribe }}",
+        "JoinLoyalty": "{{ _.joinLoyalty }}",
+        "ShareDetails": "{{ _.shareDetails }}",
+        "Nationality": "{{ _.nationality }}",
+        "PaymentAmt": "{{ _.ticketPrice }}",
+        "DiscountAmt": "{{ _.discountAmt }}",
+        "GiftVoucherAmt": "{{ _.giftVoucherAmt }}",
+        "PromoCode": "{{ _.promoCode }}",
+        "ApportionType": "{{ _.apportionType }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616354
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

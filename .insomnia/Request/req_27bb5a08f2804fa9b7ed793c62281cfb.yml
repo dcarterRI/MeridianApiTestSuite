@@ -1,0 +1,59 @@
+_id: req_27bb5a08f2804fa9b7ed793c62281cfb
+type: Request
+parentId: fld_7170c90d814747ad87f9f47fe55e7ef3
+modified: 1670348825101
+created: 1670348825101
+url: "{{MERIDIAN}}/api/v3/booking/reserve"
+name: 4. ReserveTour
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "BookingRef": "{{ _.bookingRef }}",
+        "EventDate": "{{ _.availableDate }}",
+        "EventCode": "{{ _.eventCode }}",
+        "Tickets": [
+            {
+                "TicketCode": "{{ _.ticketCode }}",
+                "Qty": 1,
+                "Value": {{ _.ticketPrice }}
+            }
+        ]
+    }
+parameters:
+  - id: pair_8bdba13a9f9f4046ad7f74181fa22c60
+    name: test
+    value: "{% response 'body', 'req_0af1a8e2da4244198f81723cf769d0f5',
+      'b64::JC5kYXRhWzBdLkV2ZW50RGF0ZQ==::46b', 'always', 60 %}"
+    description: ""
+    type: text
+    multiline: false
+    disabled: true
+  - id: pair_0e958ba4a3854c548f1c9bd550c55ede
+    name: ""
+    value: ""
+    description: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_877268d1f965499d889f1e117873200c
+  - id: pair_ccb2aedd32b740d1ba62eac10713d728
+    name: "{% allvariables  %}"
+    value: ""
+    description: ""
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.token }}"
+  prefix: ""
+metaSortKey: -1669979616363
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

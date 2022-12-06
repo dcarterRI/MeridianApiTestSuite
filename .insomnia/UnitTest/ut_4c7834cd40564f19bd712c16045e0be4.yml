@@ -1,0 +1,15 @@
+_id: ut_4c7834cd40564f19bd712c16045e0be4
+type: UnitTest
+parentId: uts_7a924fe096b247f69ee9ab255455b60d
+modified: 1670348825300
+created: 1670348825300
+requestId: req_2618e98cb97545e996a16f27fa733326
+name: 10. CheckProduct
+code: |-
+  const checkProductResponse = await insomnia.send();
+  const checkProductBody = JSON.parse(checkProductResponse.data);
+
+  console.log(checkProductBody);
+
+  expect(checkProductResponse.status).to.equal(200);
+  expect(checkProductBody.ItemCode).to.exist;

@@ -1,0 +1,43 @@
+_id: req_387983d5d7bd4f5482da2049cc190d4e
+type: Request
+parentId: wrk_0935aa4a1e0d4d7998d359564e5e1c73
+modified: 1670348825134
+created: 1670348825134
+url: "{{MERIDIAN}}/api/v3/booking/movetest call to stop environment variable
+  buggy interfacesAuto.TestingtE\"\"yfakfafak\"bookingRef1\": \"{% faker
+  'random', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+  '', '', 'alpha', 'unit', '', '', '', '', 'en' %}\",AJ0\t\"nationality\":
+  \"Irish\",///\"\"secondaryTicketCode\" : {% response 'body',
+  'req_2f1e7f4342f94c2db4999b4c43459cc8',
+  'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzFdLkl0ZW1Db2Rl::46b', 'never', 60
+  %}\t\"secondaryTicketCode\": \"{% response 'body',
+  'req_2f1e7f4342f94c2db4999b4c43459cc8',
+  'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzFdLkl0ZW1Db2Rl::46b', 'never', 60
+  %}\",\t\"secondaryTicketCode\": \"{% response 'body',
+  'req_2f1e7f4342f94c2db4999b4c43459cc8',
+  'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzFdLkl0ZW1Db2Rl::46b', 'never', 60
+  %}\"bookingRef\": \"AT0003\",ondaryB----------------------------------------g
+  InformationupDate\"secondaryTicketPrice\": \"{% response 'body',
+  'req_2f1e7f4342f94c2db4999b4c43459cc8',
+  'b64::JC5kYXRhWzRdLlRpY2tldENvZGVzWzFdLlJldGFpbFByaWNlICA=::46b', 'always', 60
+  %}.00\",\t\"-----------------------------------------------------------------\
+  -----\": \"Dates\",nfence-3"
+name: New Request
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_2b0b9f6baa6042be9f0d84e23f907894
+    name: bookingRef
+    value: "{{ _.bookingRef }}"
+    description: ""
+authentication: {}
+metaSortKey: -1670328574431
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,13 @@
+_id: ut_3dac3c143b6748e6acbee6b18c9503d5
+type: UnitTest
+parentId: uts_7a924fe096b247f69ee9ab255455b60d
+modified: 1670348825333
+created: 1670348825333
+requestId: req_fd24f61eb6ed4e908aa69974bff37f8f
+name: 11. UpdateSubscription
+code: |-
+  const updateSubResponse = await insomnia.send();
+  const updateSubBody = JSON.parse(updateSubResponse.data);
+
+  expect(updateSubResponse.status).to.equal(200);
+  expect(updateSubBody.Result).be.true;
